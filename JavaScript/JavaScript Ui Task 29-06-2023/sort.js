@@ -46,7 +46,7 @@ fetch("product.json")
         <div class="display" style="padding:10px;">
           <div class="titlePrice">
               <div class="product-title">${product.title}</div>
-              <div><span class="product-price">${product.price[0].number + " " + product.price[0].currency.slice(0, 1)}</span></div>
+              <div><span class="product-price">${product.price[0].number + " " + product.price[0].currency}</span></div>
           </div>
           <div class="product-location">${product.location}</div>
           <div class="dateRating">
@@ -66,6 +66,3 @@ fetch("product.json")
   })
   .catch((error) => console.log(error));
 
-
-
-  // product.image[product.image.length - 1]
