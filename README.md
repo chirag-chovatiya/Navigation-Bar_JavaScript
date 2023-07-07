@@ -2,6 +2,6 @@
 
 Live Url : https://chirag-chovatiya.github.io/Navigation-Bar_JavaScript/
 
-Topic : BootStrap Restoran Task 
- -     Service four Card Create, AboutUs four Image set and about us content and button create, Food Menu and items list   create
+Topic : BootStrap Slaty Task 
+ -      Slaty Logo, Home, AboutUs Destination, Tours, Blog, Book Now Button,Text Set, Search Bar, and Image Set in Pages
 
