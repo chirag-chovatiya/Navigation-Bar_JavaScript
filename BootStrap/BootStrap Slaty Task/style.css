@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&family=Sen:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -6,18 +6,54 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    font-family: 'Sen', sans-serif;
-}
+/* FONT SET */
 
-.main {
+.font-1 {
+    font-family: 'Sen', sans-serif;
+    font-weight: 700;
+}
+.font-2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+.font-3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.font-4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.font-5{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+}
+.font-6{
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+.font-7{
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+/* FONT END */
+
+.img-fluid {
+    background-color: black;
+    border-radius: 225px;
+    width: 75%;
     position: relative;
+    bottom: 57px;
+    right: 55px;
 }
-.img-fluid{
-    height: 335px;
-}
-.imgs{
-    background-color: aquamarine;
-}
+/* .roun{
+    background-color: black;
+    height: 401px;
+    width: 393px;
+    position: absolute;
+    z-index: 0;
+    border-radius: 50%;
+
+} */
+
 

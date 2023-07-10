@@ -17,59 +17,166 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="container-fluid position-relative">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <div class="container-fluid">
-                    <a href="#" class="navbar-brand ms-3 fonts">
-                        <img src="img/Union.svg" height="28" alt="CoolBrand">
-                        <small class="">Salty</small>
-                    </a>
-                    <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
-                        data-bs-target="#navbarCollapse">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarCollapse">
-                        <div class="navbar-nav ms-4 gap-3 fonts">
-                            <a href="#" class="nav-item nav-link active">Home</a>
-                            <a href="#" class="nav-item nav-link active">About us</a>
-                            <a href="#" class="nav-item nav-link active">Destinations</a>
-                            <a href="#" class="nav-item nav-link active">Tours</a>
-                            <a href="#" class="nav-item nav-link active">Blogs</a>
-                        </div>
-                        <div class="navbar-nav ms-auto gap-3 d-inline-flex">
-                            <button type="button"class="btn btn-outline-warning text-black btn-rounded py-sm-1 px-sm-3 me-3 ms-4">Warning</button>
-                        </div>
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <div class="container-fluid position-relative p-0">
+            <nav class="navbar navbar-expand-lg navbar-white mt-2 px-4 px-lg-5">
+                <a href="" class="navbar-brand ">
+                    <img src="img/Union.svg" height="35" alt="">
+                    <small class="font-1">Slaty</small>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav text-center font-2 py-0 pe-4 ms-5 gap-4">
+                        <a class="nav-item nav-link active" style="border-bottom: 2px solid #F66F4D ;">Home</a>
+                        <a class="nav-item nav-link active">About Us</a>
+                        <a class="nav-item nav-link active">Destination</a>
+                        <a class="nav-item nav-link active">Tours</a>
+                        <a class="nav-item nav-link active">Blog</a>
                     </div>
+                    <a class="btn  btn-outline font-3 ms-auto py-2 px-4"
+                        style="border-radius: 30px;border-color: #F66F4D;color: #F66F4D;">Book
+                        Now <img src="img/Vector.svg" alt=""></a>
                 </div>
             </nav>
-            <div class="container-fluid  py-5 text-black img-fluid">
-                <div class="container-fluid">
+            <div class="container-fluid  py-4 px-4 px-lg-5 bg-white head-img">
+                <div class="container-fluid  my-3 py-3">
                     <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-4 text-black">Discover the<br>Best Lovely<br>Places</h1>
-                            <p class="mb-4 pb-2 text-black">Tempor erat elitr rebum at clita. Diam
+                        <div class="col-lg-6 img-content  text-center text-lg-start font">
+                            <h1 class="display-4 text-dark font-1">Discover the<br>Best Lovely<br>Places</h1>
+                            <p class="text-dark text-muted font-5 mb-4 pb-2">Tempor erat elitr rebum at clita. Diam
                                 dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
                                 stet lorem sit clita duo justo magna dolore erat amet</p>
                             <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
                                 <div class="input-group">
-                                    <input type="search" placeholder="What're you searching for?"
-                                        aria-describedby="button-addon1" class="form-control border-0 bg-light">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-light border-0 ">Where</span>
+                                    </div>
+                                    <input type="text" placeholder="Enter location" aria-describedby="button-addon1"
+                                        class="form-control border-0 bg-light">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text bg-light border-0 small">Date</span>
+                                    </div>
+                                    <input type="date" placeholder="Select date" aria-describedby="button-addon1"
+                                        class="form-control border-0 bg-light">
                                     <div class="input-group-append text-warning">
-                                        <button id="button-addon1 rounded " type="submit"
-                                            class="btn btn-link text-warning"><i class="fa fa-search"></i></button>
+                                        <button id="button-addon1" type="submit" class="btn btn-link text-white"
+                                            style="border-radius: 20px;background-color: #F66F4D;"><i
+                                                class="fa fa-search"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6 image text-center overflow-hidden ">
-                            <img class="rounded-circle img-overlay img-fluid imgs" src="img/young-man.png" alt="">
+                        <div class="col-lg-6 img-content text-center text-lg-end back">
+                            <div class="roun"></div>
+                            <img class="img-fluid imgs" src="img/young-man.png" alt="">
                         </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Navbar End -->
+    <!-- Categories Start -->
+    <div class="container-fluid px-4 px-lg-5">
+        <div class="container-fluid">
+            <div class="row align-items-center text-center g-4">
+                <div class="col-lg-12 img-content text-center text-lg-start position-relative">
+                    <h5 class="font-7 display-5 text-dark d-flex justify-content-center align-items-end">Categories
+                        <div class="button-group ms-auto">
+                            <img src="img/Arrow left.svg" alt="" class="button-icon">
+                            <img src="img/Arrow right.svg" alt="" class="button-icon">
+                        </div>
+                    </h5>
+                    <p class="font-5 text-muted mb-5 mt-4 pb-2">Tempor erat elitr rebum at clita. Clita erat<br> ipsum
+                        et lorem etsit, sed stet lorem sit clita duo<br> justo magna dolore erat amet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid px-4">
+        <div class="container-fluid">
+            <div class="row align-items-center text-center g-4 ">
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Beach</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Desert</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Mountain</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Temple</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Tower</h6>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-2">
+                    <img class="mb-1" src="img/Rectangle 4406.png" style="width:75%">
+                    <h6 class="card-title display-7 font-6">Pyramid</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Categories End -->
+    <!-- Our Experience Start -->
+    <div class="container-fluid py-5 px-4 px-lg-5">
+        <div class="container-fluid">
+            <div class="row g-5 align-items-center mt-4">
+                <div class="col-lg-6 img-content text-center text-lg-start back">
+                    <img class="img-fluid imgs" src="img/thom-holmes.png" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h5 class="section-title" style="color: #F66F4D;">Our Experience</h5>
+                    <h1 class="mb-4">Our Stories Have <br>Adventures</h1>
+                    <p class="mb-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+                        quidemquo cumque quam deleniti atque fugit sequi magnam<br> ratione voluptate, et vero aut.
+                        Reiciendis hic nesciuntrerum!
+                    </p>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-3">
+                            <div class="card h-100 shadow bg-white border-0">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title display-7" style="color: #F66F4D;">12K+</h4>
+                                    <p class="card-text text-muted">Success Journey</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow bg-white border-0">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title display-7" style="color: #F66F4D;">12K+</h4>
+                                    <p class="card-text text-muted">Success<br> Journey</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="card shadow bg-white border-0">
+                                <div class="card-body text-center">
+                                    <h4 class="card-title display-7" style="color: #F66F4D;">12K+</h4>
+                                    <p class="card-text text-muted">Success<br> Journey</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Our Experience End -->
 </body>
+
 </html>
 
