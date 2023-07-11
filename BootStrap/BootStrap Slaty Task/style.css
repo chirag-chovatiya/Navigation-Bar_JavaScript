@@ -12,48 +12,164 @@
     font-family: 'Sen', sans-serif;
     font-weight: 700;
 }
+
 .font-2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
+
 .font-3 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
+
 .font-4 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
-.font-5{
+
+.font-5 {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-.font-6{
+
+.font-6 {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
-.font-7{
+
+.font-7 {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
+
 /* FONT END */
 
-.img-fluid {
-    background-color: black;
-    border-radius: 225px;
-    width: 75%;
+.imgs {
+    border-radius: 180px;
+    height: 444px;
     position: relative;
-    bottom: 57px;
-    right: 55px;
+    bottom: 84px;
+    right: 1px;
 }
-/* .roun{
-    background-color: black;
-    height: 401px;
-    width: 393px;
+
+.roun {
+    width: 366px;
+    margin-top: 43px;
+    height: 359px;
+    position: relative;
+    background-color: #FFD482;
+    border-radius: 53%;
+    float: right;
+}
+
+.icon-1 {
     position: absolute;
-    z-index: 0;
-    border-radius: 50%;
+    right: 340px;
+}
 
-} */
+.icon-2 {
+    position: absolute;
+    right: 43px;
+    top: 160px;
+}
 
+.big-card {
+    /* position: relative; */
+    top: 240px;
+    left: 62px;
+}
+
+.sm-card-1 {
+    width: 78px;
+    height: 23px;
+    position: absolute;
+    left: 83px;
+    top: 27px;
+}
+
+/* SECOND IMAGE */
+
+.second-img {
+    border-radius: 180px;
+    height: 444px;
+    position: relative;
+    bottom: 84px;
+    right: 1px;
+}
+
+.roun-1 {
+    width: 366px;
+    margin-top: 43px;
+    height: 359px;
+    position: relative;
+    background-color: #FFD482;
+    border-radius: 53%;
+    float: right;
+}
+
+.small-card-1 {
+    height: 145px;
+    position: relative;
+    right: 420px;
+    top: 173px;
+}
+
+.small-card-2 {
+    height: 80px;
+    position: absolute;
+    width: 140px;
+}
+
+
+@media (max-width: 600px) {
+
+    .imgs {
+        height: 387px;
+        position: relative;
+        bottom: 87px;
+        /* right: 1px; */
+    }
+
+    .roun {
+        width: 300px;
+        margin-top: 40px;
+        height: 303px;
+        position: relative;
+        background-color: #FFD482;
+        border-radius: 53%;
+        /* float: right; */
+    }
+
+    .icon-1 {
+        right: 253px;
+        top: 556px;
+    }
+
+    .icon-2 {
+        position: relative;
+        left: 120px;
+        top: 70px;
+    }
+
+    .big-card {
+        width: 136px;
+        left: 15px;
+        position: absolute;
+        top: 760px;
+    }
+
+    .sm-card-1 {
+        width: 84px;
+        height: 23px;
+        position: absolute;
+        left: 85px;
+        top: 35px;
+    }
+
+    .nature-img {
+        height: 82px;
+        width: 136px;
+    }
+}
 
