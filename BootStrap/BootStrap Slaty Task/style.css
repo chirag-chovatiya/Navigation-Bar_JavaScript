@@ -65,27 +65,23 @@
 
 .icon-1 {
     position: absolute;
-    right: 340px;
+    left: 175px;
 }
 
 .icon-2 {
     position: absolute;
-    right: 43px;
-    top: 160px;
+    right: 16px;
+    top: 39px;
 }
 
-.big-card {
-    /* position: relative; */
-    top: 240px;
-    left: 62px;
+.sm-imag{
+    height: 58px;
 }
 
 .sm-card-1 {
-    width: 78px;
-    height: 23px;
     position: absolute;
-    left: 83px;
-    top: 27px;
+    bottom: 16px;
+    left: 86px;
 }
 
 /* SECOND IMAGE */
@@ -110,66 +106,18 @@
 
 .small-card-1 {
     height: 145px;
-    position: relative;
-    right: 420px;
-    top: 173px;
+    position: absolute;
+    left: 52px;
+    bottom: 85px;
 }
 
 .small-card-2 {
     height: 80px;
     position: absolute;
-    width: 140px;
+    width: 130px;
+    bottom: 30px;
+    right: 66px;
 }
 
 
-@media (max-width: 600px) {
-
-    .imgs {
-        height: 387px;
-        position: relative;
-        bottom: 87px;
-        /* right: 1px; */
-    }
-
-    .roun {
-        width: 300px;
-        margin-top: 40px;
-        height: 303px;
-        position: relative;
-        background-color: #FFD482;
-        border-radius: 53%;
-        /* float: right; */
-    }
-
-    .icon-1 {
-        right: 253px;
-        top: 556px;
-    }
-
-    .icon-2 {
-        position: relative;
-        left: 120px;
-        top: 70px;
-    }
-
-    .big-card {
-        width: 136px;
-        left: 15px;
-        position: absolute;
-        top: 760px;
-    }
-
-    .sm-card-1 {
-        width: 84px;
-        height: 23px;
-        position: absolute;
-        left: 85px;
-        top: 35px;
-    }
-
-    .nature-img {
-        height: 82px;
-        width: 136px;
-    }
-}
 
