@@ -13,6 +13,11 @@
     font-weight: 700;
 }
 
+.img1 {
+    width: 270px;
+    height: 250px;
+}
+
 .font-2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -74,7 +79,7 @@
     top: 39px;
 }
 
-.sm-imag{
+.sm-imag {
     height: 58px;
 }
 
@@ -118,6 +123,5 @@
     bottom: 30px;
     right: 66px;
 }
-
 
 
