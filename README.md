@@ -3,7 +3,7 @@
 - Live Url : https://chirag-chovatiya.github.io/Navigation-Bar_JavaScript/
 
 - Topic : BootStrap Figma Task 
-          Slaty Logo, Home, AboutUs Destination, Tours, Blog, Book Now Button,Text Set, Search Bar, and Image Set in Pages
-
+         Responsive and Footer Set
+         
 - Figma Link : https://www.figma.com/file/C16CcVVD2fZaxAPpllBAOB/Free-Travel-UI-Landing-Page-(Community)?node-id=2%3A244&mode=dev 
 
