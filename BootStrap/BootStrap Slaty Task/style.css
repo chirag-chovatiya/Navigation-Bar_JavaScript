@@ -13,6 +13,11 @@
     font-weight: 700;
 }
 
+.img1 {
+    width: 270px;
+    height: 250px;
+}
+
 .font-2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -25,7 +30,7 @@
 
 .font-4 {
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .font-5 {
@@ -45,88 +50,78 @@
 
 /* FONT END */
 
+.imgs {
+    border-radius: 180px;
+    height: 444px;
+    position: relative;
+    bottom: 84px;
+    right: 1px;
+}
+
 .roun {
-    width: 330px;
+    width: 366px;
     margin-top: 43px;
-    height: 327px;
+    height: 359px;
     position: relative;
     background-color: #FFD482;
     border-radius: 53%;
     float: right;
-}
-
-.imgs {
-    border-radius: 196px;
-    height: 420px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px;
 }
 
 .icon-1 {
     position: absolute;
-    right: 260px;
-    bottom: 310px;
+    left: 175px;
 }
 
 .icon-2 {
     position: absolute;
-    left: 279px;
-    bottom: 275px;
+    right: 16px;
+    top: 39px;
+}
+
+.sm-imag {
+    height: 58px;
 }
 
 .sm-card-1 {
     position: absolute;
-    bottom: 20px;
-    right: 270px;
-    width: 106px;
-}
-
-.sm-card-2 {
-    position: absolute;
-    bottom: 64px;
-    width: 48px;
-    left: 70px;
+    bottom: 16px;
+    left: 86px;
 }
 
 /* SECOND IMAGE */
 
+.second-img {
+    border-radius: 180px;
+    height: 444px;
+    position: relative;
+    bottom: 84px;
+    right: 1px;
+}
+
 .roun-1 {
-    width: 351px;
-    margin-top: 17px;
-    height: 344px;
+    width: 366px;
+    margin-top: 43px;
+    height: 359px;
     position: relative;
     background-color: #FFD482;
     border-radius: 53%;
     float: right;
 }
 
-.second-img {
-    border-radius: 196px;
-    height: 407px;
-    position: absolute;
-    bottom: 0px;
-}
-
 .small-card-1 {
-    height: 130px;
-    width: 90px;
+    height: 145px;
     position: absolute;
-    bottom: 64px;
-    right: 290px;
+    left: 52px;
+    bottom: 85px;
 }
 
 .small-card-2 {
-    height: 60px;
+    height: 80px;
     position: absolute;
-    width: 116px;
-    top: 295px;
-    right: 13px;
+    width: 130px;
+    bottom: 30px;
+    right: 66px;
 }
 
-.container ul {
-    list-style-type: none;
-    padding: 0;
-    color: gray;
-}
 
