@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #faf8ed;
+}
+
 /* FONT SET */
 
 .font-1 {
@@ -144,7 +148,7 @@
 
 /* Second Images End */
 /* Categories start */
-.image-container {
+.image-hover {
     position: relative;
 }
 
@@ -160,9 +164,28 @@
     transition: opacity 0.3s ease;
 }
 
-.image-container:hover .hover-text {
+.image-hover:hover .hover-text {
     opacity: 1;
 }
 
 /* Categories end */
+.bottom-left {
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+
+.nature-img>span {
+    position: absolute;
+    font-size: 12px;
+    left: 20px;
+    padding: 0px 6px;
+    top: 20px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    color: gray;
+}
 
