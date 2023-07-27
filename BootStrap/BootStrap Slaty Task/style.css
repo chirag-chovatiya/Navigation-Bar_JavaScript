@@ -5,8 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
     background-color: #faf8ed;
 }
 
@@ -174,7 +173,6 @@ body {
     bottom: 30px;
     left: 20px;
 }
-
 .nature-img>span {
     position: absolute;
     font-size: 12px;
@@ -182,7 +180,6 @@ body {
     padding: 0px 6px;
     top: 20px;
 }
-
 .container ul {
     list-style-type: none;
     padding: 0;
