@@ -2,84 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
     <!-- Navbar Start -->
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-white mt-2 ">
-            <a href="" class="navbar-brand ">
-                <img src="img/Union.svg" height="35" alt="">
-                <small class="font-1">Slaty</small>
+        <nav class="navbar navbar-expand-lg navbar-white mt-2">
+            <a href="" class="navbar-brand">
+                <img src="img/Union.svg" height="35" alt="" />
+                <small class="font-1" style="font-size: 18px">Slaty</small>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="fa fa-bars"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav text-center font-2 pe-4 ms-5 gap-4">
-                    <a class="nav-item nav-link active" style="border-bottom: 2px solid #F66F4D ;">Home</a>
-                    <a class="nav-item nav-link active">About Us</a>
-                    <a class="nav-item nav-link active">Destination</a>
-                    <a class="nav-item nav-link active">Tours</a>
-                    <a class="nav-item nav-link active">Blog</a>
+                    <a href="#home" class="nav-item nav-link text-dark active">Home</a>
+                    <a href="#aboutus" class="nav-item text-dark">About Us</a>
+                    <a href="#destination" class="nav-item text-dark">Destination</a>
+                    <a href="#tours" class="nav-item text-dark">Tours</a>
+                    <a href="#blog" class="nav-item nav-link text-dark">Blog</a>
                 </div>
-                <a class="btn  btn-outline font-3 ms-auto py-2 px-4"
-                    style="border-radius: 30px;border-color: #F66F4D;color: #F66F4D;">Book
-                    Now <img src="img/Vector-booknow.png" alt="">
-                </a>
+                <div class="ms-auto text-center">
+                    <a class="btn btn-outline font-3 py-2 px-4 mt-4"
+                        style="border-radius: 30px; border-color: #f66f4d; color: #f66f4d">Book Now <img
+                            src="img/Vector-booknow.png" alt="" />
+                    </a>
+                </div>
             </div>
         </nav>
-        <div class="container  py-5 bg-white head-img my-3">
+        <div class="container py-5 head-img my-3">
             <div class="row align-items-center g-5">
                 <div class="col-lg-6 text-center text-lg-start font">
-                    <h4 class="display-5 text-dark font-1">Discover the<br>Best Lovely<br>Places</h4>
-                    <p class="text-dark text-muted font-5 mb-4 pb-2">Tempor erat elitr rebum at clita. Diam
-                        dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed
-                        stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <h4 class="display-5 text-dark font-1">
+                        Discover the<br />Best Lovely<br />Places
+                    </h4>
+                    <p class="text-dark text-muted font-5 mb-4 pb-2">
+                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
+                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
+                        lorem sit clita duo justo magna dolore erat amet
+                    </p>
                     <div class="p-1 bg-light rounded rounded-pill shadow-sm mb-4">
-                        <div class="input-group">
+                        <div class="input-group flex-nowrap ms-3 p-1">
                             <div class="input-group-prepend">
-                                <span class="input-group-text bg-light border-0 font-6">Where</span>
+                                <span class="input-group-text bg-light border-0 font-6 p-0"
+                                    style="font-size: 16px;">Where</span>
+                                <input class="form-control border-0 bg-light font-5 p-0 shadow-none"
+                                    style="font-size: 12px;" type="text" placeholder="Center Point, Lo..." />
                             </div>
-                            <input class="form-control border-0 bg-light font-5" type="text"
-                                placeholder="Center Point, Lo...">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text bg-light border-0 small font-6">Date</span>
+                            <div class="vertical-line mx-2"></div>
+                            <div class="input-group-prepend mx-auto">
+                                <span for="Date" class="input-group-text bg-light border-0 small font-6 p-0"
+                                    style="font-size: 16px;">Date</span>
+                                <input class="Date form-control border-0 bg-light font-5 p-0 shadow-none" id="return"
+                                    style="font-size: 12px;" placeholder="09th March, 2021" />
                             </div>
-                            <input class="form-control border-0 bg-light font-5" placeholder="09th March,2021">
-                            <div class="input-group-append text-warning">
-                                <button type="submit" class="btn btn-link text-white"
-                                    style="border-radius: 20px;background-color: #F66F4D;"><i class="fa fa-search"></i>
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-link text-white me-4 p-0">
+                                    <img class="btn-image" style="height: 40px;" src="img/button-icon.png" alt="">
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 text-center text-lg-start">
-                    <div class="roun img-fluid">
-                        <img class="icon-1 img-fluid" src="img/Orion_navigation.png" alt="">
-                        <img class="icon-2" src="img/Orion_globe 1.png" alt="">
-                        <img class="img-fluid imgs" src="img/young-man.png" alt="">
-                        <div class="card sm-card-1  shadow bg-white  p-0 border-0">
-                            <img src="img/Rectangle 4404.jpg" alt="">
+                <div class="col-lg-6 d-flex justify-content-lg-end justify-content-sm-center">
+                    <div class="roun img-fluid ">
+                        <img class="icon-1 img-fluid" src="img/Orion_navigation.png" alt="" />
+                        <img class="icon-2 img-fluid" src="img/Orion_globe 1.png" alt="" />
+                        <img class="img-fluid imgs" src="img/young-man.png" alt="" />
+                        <div class="card sm-card-1 shadow bg-white p-0 border-0">
+                            <img class="img-fluid" src="img/Rectangle 4404.png" alt="" />
                             <div class="card-body text-center">
-                                <p class="card-text text-muted font-6" style="font-size: 9px;">Dubai moruvumi</p>
+                                <p class="card-text text-muted font-6" style="font-size: 9px">
+                                    Dubai moruvumi
+                                </p>
                             </div>
-                            <div class="rounded sm-card-2  shadow bg-white border-0 p-1">
-                                <p class="card-text text-muted font-6" style="font-size: 9px;"><i
-                                        class="fa-solid fa-location-dot me-1 "></i>Dubai</p>
+                            <div class="rounded sm-card-2 shadow bg-white border-0 p-1">
+                                <p class="card-text text-muted font-6" style="font-size: 9px">
+                                    <i class="fa-solid fa-location-dot me-1"></i>Dubai
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -90,79 +109,111 @@
     <!-- Navbar End -->
     <!-- Categories Start -->
     <div class="container py-5">
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-lg-6 col-sm-6 text-center text-lg-start">
                 <h4 class="display-6 text-dark font-7">Categories</h4>
-                <p class="font-5 text-muted mb-5">Tempor erat elitr rebum at clita. Clita erat<br> ipsum
-                    et lorem etsit, sed stet lorem sit clita<br> justo magna dolore erat amet</p>
+                <p class="font-5 text-muted mb-5">
+                    Tempor erat elitr rebum at clita. Clita erat<br />
+                    ipsum et lorem etsit, sed stet lorem sit clita<br />
+                    justo magna dolore erat amet
+                </p>
             </div>
-            <div class="col-lg-6 col-sm-12 mb-4 ">
+            <div class="col-lg-6 col-sm-12 mb-4">
                 <div class="button-group text-end">
-                    <img src="img/Arrow left.svg" alt="" class="Arrow-icon" style="height: 40px;">
-                    <img src="img/Arrow right.svg" alt="" class="Arrow-icon" style="height: 40px;">
+                    <a><img src="img/Arrow left.svg" alt="" class="Arrow-icon" style="height: 40px" /></a>
+                    <a><img src="img/Arrow right.svg" alt="" class="Arrow-icon" style="height: 40px" /></a>
                 </div>
             </div>
         </div>
-        <div class="row align-items-center text-center g-4 ">
-            <div class="col-sm-6 col-lg-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4406.png">
+        <div class="row align-items-center text-center g-4">
+            <div class="col-lg-2 col-sm-6">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1 " src="img/Rectangle 4406.png" />
+                    <h6 class="hover-text font-6">Beach</h6>
+                </div>
                 <h6 class="font-6">Beach</h6>
             </div>
-            <div class="col-sm-6 col-lg-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4407.png">
+            <div class="col-lg-2 col-sm-6 ">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1 " src="img/Rectangle 4407.png" />
+                    <h6 class="hover-text font-6">Desert</h6>
+                </div>
                 <h6 class="font-6">Desert</h6>
             </div>
-            <div class="col-sm-6 col-lg-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4408.png">
+            <div class="col-lg-2 col-sm-6">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1 " src="img/Rectangle 4408.png" />
+                    <h6 class="hover-text font-6">Mountain</h6>
+                </div>
                 <h6 class="font-6">Mountain</h6>
             </div>
-            <div class="col-sm-6 col-lg-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4409.png">
+            <div class="col-lg-2 col-sm-6 ">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1 " src="img/Rectangle 4409.png" />
+                    <h6 class="hover-text font-6">Temple</h6>
+                </div>
                 <h6 class="font-6">Temple</h6>
             </div>
-            <div class="col-sm-6 col-md-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4410.png">
+            <div class="col-lg-2 col-sm-6 ">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1 " src="img/Rectangle 4410.png" />
+                    <h6 class="hover-text font-6">Tower</h6>
+                </div>
                 <h6 class="font-6">Tower</h6>
             </div>
-            <div class="col-sm-6 col-lg-2">
-                <img class="mb-1 w-100" src="img/Rectangle 4411.png">
+            <div class="col-lg-2 col-sm-6 ">
+                <div class="image-hover">
+                    <img class="img-fluid mb-1" src="img/Rectangle 4411.png" />
+                    <h6 class="hover-text font-6">Pyramid</h6>
+                </div>
                 <h6 class="font-6">Pyramid</h6>
             </div>
         </div>
     </div>
     <!-- Categories End -->
     <!-- Our Experience Start -->
-
     <div class="container py-5">
         <div class="row align-items-center">
-            <div class="col-lg-6 d-flex justify-content-center ">
+            <div class="col-lg-6 d-flex justify-content-center">
                 <div class="roun-1">
-                    <img class="img-fluid second-img" src="img/thom-holmes.png" alt="">
+                    <img class="img-fluid second-img" src="img/thom-holmes.png" alt="" />
 
                     <div class="small-card-1 rounded shadow bg-white border-0 text-center p-2">
-                        <img class="nature-img-1 text-center mb-3" style="width: 50px;" src="img/Icon.png">
-                        <h6 class="card-title display-7 font-4" style="color: #F66F4D;">600%</h6>
-                        <small class="text-muted ">Destinations</small>
+                        <img class="nature-img-1 text-center mb-3" style="width: 50px" src="img/Icon.png" />
+                        <h6 class="card-title display-7 font-4" style="color: #f66f4d">
+                            600%
+                        </h6>
+                        <small class="text-muted">Destinations</small>
                     </div>
                     <div class="small-card-2 rounded shadow bg-white border-0 text-center p-2">
-                        <h6 class="card-title display-7 ms-1 font-4"><img class="img me-2" style="color: #F66F4D;"
-                                src="img/Orion_cellular-signal 1.png" alt="">5000+</h6>
-                        <small class="text-muted ">Customars</small>
+                        <h6 class="card-title display-7 ms-1 font-4">
+                            <img class="img me-2" style="color: #f66f4d" src="img/Orion_cellular-signal 1.png"
+                                alt="" />5000+
+                        </h6>
+                        <small class="text-muted">Customars</small>
                     </div>
                 </div>
             </div>
             <div class="col-lg-6 py-5 text-center text-lg-start">
-                <h5 class="section-title font-7" style="color: #F66F4D;">Our Experience</h5>
-                <h4 class="display-6 mb-4 text-dark font-7">Our Stories Have <br>Adventures</h4>
-                <p class="mb-4 text-muted font-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-                    quidemquo cumque quam deleniti atque fugit sequi magnam<br> ratione voluptate, et vero aut.
-                    Reiciendis hic nesciuntrerum!
+                <h5 class="section-title font-7" style="color: #f66f4d">
+                    Our Experience
+                </h5>
+                <h4 class="display-6 mb-4 text-dark font-7">
+                    Our Stories Have <br />Adventures
+                </h4>
+                <p class="mb-4 text-muted font-5">
+                    We are experienced in bringing adventures to stay their<br>
+                    journey, with all outdoor destinations in the world as our<br>
+                    specialties. Start your adventure now! Nature has already<br>
+                    called you!
                 </p>
-                <div class="row g-4">
+                <div class="row g-4 d-flex justify-content-lg-start justify-content-sm-center">
                     <div class="col-sm-3">
                         <div class="card h-100 shadow bg-white border-0">
                             <div class="card-body text-center">
-                                <h4 class="card-title display-7 font-7" style="color: #F66F4D;">12K+</h4>
+                                <h4 class="card-title display-7 font-7" style="color: #f66f4d">
+                                    12K+
+                                </h4>
                                 <p class="card-text text-muted font-5">Success Journey</p>
                             </div>
                         </div>
@@ -170,7 +221,9 @@
                     <div class="col-sm-3">
                         <div class="card shadow bg-white border-0">
                             <div class="card-body text-center">
-                                <h4 class="card-title display-7 font-7" style="color: #F66F4D;">16K+</h4>
+                                <h4 class="card-title display-7 font-7" style="color: #f66f4d">
+                                    16K+
+                                </h4>
                                 <p class="card-text text-muted font-5">Awards Winning</p>
                             </div>
                         </div>
@@ -178,7 +231,9 @@
                     <div class="col-sm-3">
                         <div class="card shadow bg-white border-0">
                             <div class="card-body text-center">
-                                <h4 class="card-title display-7 font-7" style="color: #F66F4D;">20K+</h4>
+                                <h4 class="card-title display-7 font-7" style="color: #f66f4d">
+                                    20K+
+                                </h4>
                                 <p class="card-text text-muted font-5">Awards Winning</p>
                             </div>
                         </div>
@@ -192,51 +247,116 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-lg-6 col-sm-6 text-center text-lg-start">
-                <h4 class="display-6 text-dark font-7 mb-4">Find Popular<br>Destination</h4>
+                <h4 class="display-6 text-dark font-7 mb-4">
+                    Find Popular<br />Destination
+                </h4>
             </div>
             <div class="col-lg-6 col-sm-6 mb-4">
                 <div class="button-group text-end">
-                    <img src="img/Arrow left.svg" alt="" class="Arrow-icon" style="height: 40px;">
-                    <img src="img/Arrow right.svg" alt="" class="Arrow-icon" style="height: 40px;">
+                    <a class="btn p-0" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                        <img src="img/Arrow left.svg" alt="" style="height: 40px;">
+                    </a>
+                    <a class="btn p-0" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                        <img src="img/Arrow right.svg" alt="" style="height: 40px;">
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-4 col-sm-6 mb-3">
-                <div class="card shadow bg-white p-2 border-0">
-                    <img src="img/image.jpg" alt="">
-                    <div class="card-body ps-0 pe-0">
-                        <h6 class="card-title">Mountain Hiking Tour</h6>
-                        <p class="card-text text-muted" style="font-size: 10px;">Mountain Hiking Tour</p>
-                        <div class="ms-auto d-flex align-items-center justify-content-between">
-                            <h6 class="price">$69 <small>/person</small> </h6>
-                            <button type="button" class="btn btn-dark btn-sm rounded-pill">Book Now</button>
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+            <div class="carousel-inner ">
+                <div class="carousel-item active">
+                    <div class="card-group gap-4 mb-4 ">
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image.jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">Mountain Hiking Tour</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">
+                                    Mountain Hiking Tour
+                                </p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$69 <small>/person</small></h6>
+                                    <button type="button" class="btn btn-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image (1).jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">Machu Picchu, Peru</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">
+                                    Machu Picchu, Peru
+                                </p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$99 <small>/person</small></h6>
+                                    <button type="button" class="btn border-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image (2).jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">The Grand Canyon, Arizona</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">
+                                    Machu Picchu, Peru
+                                </p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$99 <small>/person</small></h6>
+                                    <button type="button" class="btn border-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-sm-6 mb-3">
-                <div class="card shadow bg-white p-2 border-0">
-                    <img src="img/image (1).jpg" alt="">
-                    <div class="card-body ps-0 pe-0">
-                        <h6 class="card-title">Machu Picchu, Peru</h6>
-                        <p class="card-text text-muted" style="font-size: 10px;">Machu Picchu, Peru</p>
-                        <div class="ms-auto d-flex align-items-center justify-content-between">
-                            <h6 class="price">$99 <small>/person</small> </h6>
-                            <button type="button" class="btn border-dark btn-sm rounded-pill">Book Now</button>
+                <div class="carousel-item">
+                    <div class="card-group gap-3 mb-4">
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image.jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">Mountain Hiking Tour</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">Mountain Hiking Tour</p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$69 <small>/person</small></h6>
+                                    <button type="button" class="btn btn-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <div class="card shadow bg-white p-2 border-0">
-                    <img src="img/image (2).jpg" alt="">
-                    <div class="card-body ps-0 pe-0">
-                        <h6 class="card-title">The Grand Canyon, Arizona</h6>
-                        <p class="card-text text-muted" style="font-size: 10px;">Mountain Hiking Tour</p>
-                        <div class="ms-auto d-flex align-items-center justify-content-between">
-                            <h6 class="price">$70 <small>/person</small> </h6>
-                            <button type="button" class="btn border-dark btn-sm rounded-pill">Book Now</button>
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image (1).jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">Machu Picchu, Peru</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">
+                                    Machu Picchu, Peru
+                                </p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$99 <small>/person</small></h6>
+                                    <button type="button" class="btn border-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-2 rounded shadow-1-strong bg-white border-0">
+                            <img src="img/image (2).jpg" alt="" />
+                            <div class="card-body ps-0 pe-0 ">
+                                <h6 class="card-title">The Grand Canyon, Arizona</h6>
+                                <p class="card-text text-muted" style="font-size: 10px">
+                                    Machu Picchu, Peru
+                                </p>
+                                <div class="ms-auto d-flex align-items-center justify-content-between">
+                                    <h6 class="price">$99 <small>/person</small></h6>
+                                    <button type="button" class="btn border-dark btn-sm rounded-pill">
+                                        Book Now
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -244,17 +364,16 @@
         </div>
     </div>
     <!-- Find Popular Destination End -->
-    <!-- Top Destination Start -->
-
     <div class="container py-5">
         <div class="row">
-            <div class="col-lg-12 col-sm-6 text-center">
+            <div class="col-lg-12 col-sm-12 text-center">
                 <h4 class="display-6 text-dark font-7">Top Destinations</h4>
-                <p class="text-muted font-5" style="font-size: 11px;">Sost Brilliant reasons Entrada should be your
-                    one-stop-shop!</p>
-                <div class="btn text-center mb-2 font-7">
+                <p class="text-muted font-5" style="font-size: 11px">
+                    Sost Brilliant reasons Entrada should be your one-stop-shop!
+                </p>
+                <div class="btn  text-center mb-2 font-7 ">
                     <button type="button" class="btn btn-dark btn-sm mt-2 rounded-pill me-2">London</button>
-                    <button type="button" class="btn border-dark btn-sm mt-2 rounded-pill me-2">Bangkok</button>
+                    <button type="button" class="btn border-dark btn-sm mt-2 rounded-pill me-2"> Bangkok</button>
                     <button type="button" class="btn border-dark btn-sm mt-2 rounded-pill me-2">England</button>
                     <button type="button" class="btn border-dark btn-sm mt-2 rounded-pill me-2">Singapore</button>
                     <button type="button" class="btn border-dark btn-sm mt-2 rounded-pill">Italy</button>
@@ -262,18 +381,66 @@
             </div>
         </div>
         <div class="row mt-4">
-            <div class="col-md-4 mt-3 col-lg-4">
-                <img src="img/Place-1.jpg" class="w-100 shadow-1-strong rounded mb-4" style="height: 217px;" />
-                <img src="img/Place-2.jpg" class="w-100  shadow-1-strong rounded mb-4" style="height: 217px;" />
+            <div class="col-md-4 mt-3 col-lg-3">
+                <div class="nature-img position-relative">
+                    <img src="img/Place-1.png" class="w-100 shadow-1-strong rounded mb-4" style="height: 217px" />
+                    <span class="bg-light text-dark text-center rounded">3.5</span>
+                    <div class="bottom-left text-light">
+                        <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                        <p class="font-5" style="font-size: 14px;">Worefall</p>
+                    </div>
+                </div>
+                <div class="nature-img position-relative">
+                    <img src="img/Place-2.png" class="w-100 shadow-1-strong rounded mb-4" style="height: 217px" />
+                    <span class="bg-light text-dark text-center rounded">3.5</span>
+                    <div class="bottom-left text-light">
+                        <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                        <p class="font-5" style="font-size: 14px;">Worefall</p>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 mt-3 col-lg-4">
-                <img src="img/Place-3.jpg" class="w-100 shadow-1-strong rounded mb-4" style="height: 460px;" />
+                <div class="nature-img position-relative">
+                    <img src="img/Place-3.png" class="w-100 shadow-1-strong rounded mb-4" style="height: 460px" />
+                    <span class="bg-dark text-light text-center rounded">3.5</span>
+                    <div class="bottom-left text-light">
+                        <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                        <p class="font-5" style="font-size: 14px;">Worefall</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-4 mt-3 col-lg-4 ">
-                <img src="img/Place-4.jpg" class="w-100 shadow-1-strong rounded mb-4" style="height: 217px;" />
+            <div class="col-md-4 mt-3 col-lg-5">
+                <div class="nature-img position-relative">
+                    <img src="img/Place-4.png" class="w-100 shadow-1-strong rounded mb-4" style="height: 217px" />
+                    <span class="bg-dark text-light text-center rounded">3.5</span>
+                    <div class="bottom-left text-light">
+                        <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                        <p class="font-5" style="font-size: 14px;">Worefall</p>
+                    </div>
+                </div>
                 <div class="row">
-                    <img src="img/Place-5.jpg" class="w-50 shadow-1-strong rounded mb-4" style="height: 217px;" />
-                    <img src="img/Place-6.jpg" class="w-50 shadow-1-strong rounded mb-4" style="height: 217px;" />
+                    <div class="col-md-6 mt-1 col-lg-4">
+                        <div class="nature-img position-relative">
+                            <img src="img/Place-5.png" class="w-100 shadow-1-strong rounded mb-4"
+                                style="height: 217px" />
+                            <span class="bg-dark text-light text-center rounded">3.5</span>
+                            <div class="bottom-left text-light">
+                                <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                                <p class="font-5" style="font-size: 14px;">Worefall</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-1 col-lg-8">
+                        <div class="nature-img position-relative">
+                            <img src="img/Place-6.png" class="w-100 shadow-1-strong rounded mb-4"
+                                style="height: 217px" />
+                            <span class="font-6 bg-dark text-light text-center rounded">3.5</span>
+                            <div class="bottom-left text-light">
+                                <h5 class="mb-0 font-7" style="font-size: 20px;">Vientam</h5>
+                                <p class="font-5" style="font-size: 14px;">Worefall</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,39 +448,44 @@
     <!-- Top Destination End -->
     <!-- About Us Start -->
     <div class="container">
-        <div class="row g-5 align-items-center ">
+        <div class="row g-5 align-items-center">
             <div class="col-lg-6 d-flex justify-content-center position-relative">
                 <div class="roun-3">
-                    <img class="img-fluid rounded-pill" style="background-color: #F66F4D;height: 375px;"
-                        src="img/attractive-guy.png" alt="">
+                    <img class="img-fluid rounded-pill" style="background-color: #f66f4d; height: 375px"
+                        src="img/attractive-guy.png" alt="" />
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-start">
-                <h5 class="font-7" style="color: #F66F4D;">About Us</h5>
-                <h4 class="display-6 text-dark font-7">A customer said <br>about us:</h4>
+                <h5 class="font-7" style="color: #f66f4d">About Us</h5>
+                <h4 class="display-6 text-dark font-7">
+                    A customer said <br />about us:
+                </h4>
                 <div class="row g-4 mb-4">
-                    <div class="col-lg-10 col-sm-12 ">
+                    <div class="col-lg-10 col-sm-12">
                         <div class="card shadow bg-white border-0">
                             <div class="card-body">
-                                <p class="card-text text-muted font-5" style="font-size: 13px;">Salty helped me a lot in
-                                    finding the best place for
-                                    our first outdoor adventure trip. They responded very quickly and gave me a
-                                    detailed account of the place—its history, as well as its best features.</p>
+                                <p class="card-text text-muted font-5" style="font-size: 13px">
+                                    Salty helped me a lot in finding the best place for our
+                                    first outdoor adventure trip. They responded very quickly
+                                    and gave me a detailed account of the place—its history, as
+                                    well as its best features.
+                                </p>
                                 <div class="mt-4">
-                                    <div class="small-ratings">
+                                    <div class="small-ratings text-start">
                                         <i class="fa text-warning fa-star"></i>
                                         <i class="fa text-warning fa-star"></i>
                                         <i class="fa text-warning fa-star"></i>
                                         <i class="fa text-warning fa-star"></i>
                                         <i class="fa text-warning fa-star"></i>
                                         <div class="d-flex justify-content-between align-items-center">
-                                            <h6 class="review-star mt-2 font-6 fw-bold">Andrew Sarma <br><small
-                                                    class="text-muted font-5">Enterpreneur</small></h6>
+                                            <h6 class="review-star mt-2 font-6 fw-bold">
+                                                Andrew Sarma <br /><small class="text-muted font-5">Enterpreneur</small>
+                                            </h6>
                                             <div class="button-group text-end">
                                                 <img src="img/Arrow left.svg" alt="" class="Arrow-icon"
-                                                    style="height: 30px;">
+                                                    style="height: 30px" />
                                                 <img src="img/Arrow right.svg" alt="" class="Arrow-icon"
-                                                    style="height: 30px;">
+                                                    style="height: 30px" />
                                             </div>
                                         </div>
                                     </div>
@@ -329,17 +501,20 @@
     <!-- Sign up to our newsletter Start -->
     <div class="container py-5">
         <div class="rounded d-flex flex-column justify-content-center align-items-center"
-            style="background-color: #FFD482;">
+            style="background-color: #ffd482">
             <div class="content mt-5 mb-5">
-                <h2 class="text-dark text-center font-7">Sign up to our newsletter</h2>
-                <p class="text-muted text-center font-5">Reciev latest news, update, and many other things<br>every
-                    week.</p>
-                <div class="p-1 bg-light rounded  shadow-sm mt-4">
+                <h2 class="text-dark text-center font-7">
+                    Sign up to our newsletter
+                </h2>
+                <p class="text-muted text-center font-5">
+                    Reciev latest news, update, and many other things<br />every week.
+                </p>
+                <div class="p-1 bg-light rounded shadow-sm mt-4">
                     <div class="input-group">
                         <input type="text" placeholder="Enter Your email address"
-                            class="form-control border-0 bg-light font-5">
+                            class="form-control border-0 bg-light font-5" />
                         <div class="input-group-append text-warning">
-                            <button type="submit" class="btn btn-link text-white" style="background-color: #F66F4D;">
+                            <button type="submit" class="btn btn-link text-white" style="background-color: #f66f4d">
                                 <i class="fa-brands fa-xl fa-telegram"></i>
                             </button>
                         </div>
@@ -350,55 +525,64 @@
     </div>
     <!-- Sign up to our newsletter End -->
     <!-- Footer Start -->
-    <div class="container my-5">
+    <div class="container my-3">
         <footer class="text-center text-lg-start text-black">
-            <div class="container p-4 pb-0">
+            <div class="container p-4">
                 <section class="">
                     <div class="row">
                         <div class="col-md-4 col-lg-4 col-xl-3 mx-auto mt-3">
-                            <h6 class="text-uppercase mb-4 font-weight-bold">
-                                Company name
-                            </h6>
-                            <p>
-                                Here you can use rows and columns to organize your footer
-                                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                elit.
+                            <a href="" class="navbar-brand">
+                                <img src="img/Union.svg" height="35" alt="" />
+                                <small class="font-1" style="font-size: 18px">Slaty</small>
+                            </a>
+                            <p class="mt-4">
+                                Enjoy the touring<br />
+                                with Salty
                             </p>
+                            <ul class="col-md-3 justify-content-center d-flex">
+                                <li class="ms-3">
+                                    <a class="text-muted" href="#"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                                </li>
+                                <li class="ms-3">
+                                    <a class="text-muted" href="#"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                                </li>
+                                <li class="ms-3">
+                                    <a class="text-muted" href="#"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="mb-4 ">Products</h6>
+                            <h5 class="mb-4">Resources</h5>
                             <ul>
-                                <li>Download </li>
+                                <li>Download</li>
                                 <li>Help Center</li>
                                 <li>Guide Book</li>
                                 <li>App Directory</li>
                             </ul>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="mb-4 ">Products</h6>
+                            <h5 class="mb-4">Travellers</h5>
                             <ul>
-                                <li>Download </li>
-                                <li>Help Center</li>
-                                <li>Guide Book</li>
-                                <li>App Directory</li>
+                                <li>Why Travellers</li>
+                                <li>Enterprice</li>
+                                <li>Customer Stories</li>
+                                <li>Instagram post</li>
                             </ul>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="mb-4 ">Products</h6>
+                            <h5 class="mb-4">Company</h5>
                             <ul>
-                                <li>Download </li>
-                                <li>Help Center</li>
-                                <li>Guide Book</li>
-                                <li>App Directory</li>
+                                <li>Travelling</li>
+                                <li>About Locato</li>
+                                <li>Success</li>
+                                <li>Information</li>
                             </ul>
                         </div>
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                            <h6 class="mb-4 ">Products</h6>
+                            <h5 class="mb-4">Get App</h5>
                             <ul>
-                                <li>Download </li>
-                                <li>Help Center</li>
-                                <li>Guide Book</li>
-                                <li>App Directory</li>
+                                <li>App Store</li>
+                                <li>Google Play Store</li>
                             </ul>
                         </div>
                     </div>
@@ -407,6 +591,7 @@
         </footer>
     </div>
     <!-- Footer End -->
+
 </body>
 
 </html>
