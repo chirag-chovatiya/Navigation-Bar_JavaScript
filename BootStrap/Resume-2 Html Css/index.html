@@ -8,9 +8,183 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
-<link rel="stylesheet" href="style.css">
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+        background: #585c68;
+        font-size: 11px;
+        line-height: 22px;
+        color: #555555;
+    }
+
+    .resume {
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin: 50px auto;
+    }
+
+    .resume .resume_left {
+        width: 280px;
+        background: hsl(0deg 0% 30.59%);
+    }
+
+    .resume .resume_left .resume_profile {
+        width: 100%;
+        height: 280px;
+    }
+
+    .resume .resume_left .resume_profile img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .w3-display-bottomleft h2 {
+        font-size: 45px;
+        color: white;
+    }
+
+    .w3-display-bottomleft {
+        position: absolute;
+        left: 25px;
+        bottom: 10px;
+    }
+
+    .resume_profile {
+        position: relative;
+    }
+
+    .heading {
+        background-color: hsl(33.78deg 100% 56.47%);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        padding-left: 30px;
+        margin-right: 45px;
+        margin-top: 50px
+    }
+
+    .heading-2 {
+        background-color: hsl(33.78deg 100% 56.47%);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        padding-left: 30px;
+        margin-top: 58px
+    }
+
+    .contact,
+    .portfolio,
+    .hobby {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-right: 44px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    .language {
+        margin-top: 35px;
+    }
+
+    .language .sticker {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-right: 44px;
+        margin-top: 10px;
+    }
+
+    .contact .sticker {
+        padding-top: 18px;
+        color: #ff9e21;
+    }
+
+    .portfolio .sticker-1 {
+        padding-top: 14px;
+        color: #ff9e21;
+    }
+
+    .experience,
+    .work-experience {
+        display: grid;
+        grid-template-columns: 3.5fr 3fr;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 2rem;
+        gap: 1rem;
+        font-size: 12px;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .about {
+        font-size: 15px;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .resume .resume_right {
+        width: 520px;
+        background: hsl(240deg 4% 9.8%);
+        padding: 25px;
+    }
+
+    .contact p,
+    .experience p,
+    .education p,
+    .portfolio p,
+    .language label,
+    .hobby p {
+        padding: 3px 0;
+        font-size: 13px;
+    }
+
+    .experience h3,
+    .work-experience h3 {
+        font-size: 17px;
+        color: white;
+    }
+
+    .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        margin-top: 50px;
+        gap: 1rem;
+        color: gainsboro;
+    }
+
+    .skill .sticker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .skill .sticker .prog {
+        font-size: 15px;
+    }
+</style>
 
 <body>
     <div class="resume">
@@ -20,53 +194,107 @@
                 <div class="w3-display-bottomleft ">
                     <h2>Jane Doe</h2>
                     <br>
-                    <p>WEB DESIGNER & DEVLOPER</p>
+                    <p style="color: white; font-size: 15px;">WEB DESIGNER & DEVLOPER</p>
                 </div>
             </div>
             <div class="resume_content">
                 <div class="resume_item resume_info">
                     <div class="box-1">
                         <div class="heading">
-                            <p>CONTACT</p>
+                            <h4>CONTACT</h4>
                         </div>
                         <div class="contact">
-                            <p class="p1">call +123-324-5555</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
+                            <div class="sticker">
+                                <i class="fa-solid fa-location-dot fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>B-107 SHIVDARSHAN APPARTMENT , MODI-MOHALO,ASHVANIKUMAR,SURAT-395008</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-solid fa-phone fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>+91991332568</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>chirag9292@gmail.com</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-solid fa-box fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>YourName.com</p>
+                            </div>
                         </div>
                     </div>
                     <div class="box-1">
                         <div class="heading">
-                            <p>PORTFOLIO</p>
+                            <h4>PORTFOLIO</h4>
                         </div>
-                        <div class="contact">
-                            <p class="p1">call +123-324-5555</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
+                        <div class="portfolio">
+                            <div class="sticker-1">
+                                <i class="fa-solid fa-location-dot fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>Dribbblr/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-solid fa-phone fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>colorflot/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>behence/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-brands fa-square-youtube fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>youtube/username</p>
+                            </div>
                         </div>
                     </div>
                     <div class="box-1">
                         <div class="heading">
-                            <p>LANGUAGE</p>
+                            <h4>LANGUAGE</h4>
                         </div>
-                        <div class="contact">
-                            <p class="p1">call +123-324-5555</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
+                        <div class="language">
+                            <div class="sticker">
+                                <label for="file" class="prog">ENGLISH</label>
+                                <progress id="file" value="90" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">BENGALI</label>
+                                <progress id="file" value="80" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">SPANISH</label>
+                                <progress id="file" value="60" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">GERMAN</label>
+                                <progress id="file" value="40" max="100">80%</progress>
+                            </div>
                         </div>
                     </div>
                     <div class="box-1">
                         <div class="heading">
-                            <p>HOBBIES</p>
+                            <h4>HOBBIES</h4>
                         </div>
-                        <div class="contact">
-                            <p class="p1">call +123-324-5555</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
-                            <p class="p1"><i class="material-icons icons1">email</i>info@demo.com</p>
+                        <div class="hobby">
+                            <p>Photography</p>
+                            <p>Travelling</p>
+                            <p>Gardening</p>
+                            <p>Music</p>
+                            <p>Dancing</p>
+                            <p>Cooking</p>
                         </div>
                     </div>
                 </div>
@@ -75,75 +303,127 @@
         <div class="resume_right">
             <div class="resume_item resume_about">
                 <div class="heading-2">
-                    <p class="bold">About us</p>
+                    <h4>About us</h4>
                 </div>
-                <p class="p2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                <p class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
                     illo fugit
                     officiis
                     distinctio
                     culpa officia totam atque exercitationem inventore repudiandae?</p>
                 <div class="resume_item resume_work">
                     <div class="heading-2">
-                        <p class="bold">Education</p>
+                        <h4>Education</h4>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div>
-                                <h3 class="edu-hed">SCHOOL NAME</h3>
-                                <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nostrum,
-                                    voluptatibus!
-                                </p>
-                            </div>
-                            <div>
-                                <h3 class="edu-hed">COLLEGE NAME</h3>
-                                <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nostrum,
-                                    voluptatibus!
-                                </p>
-                            </div>
-                            <div>
-                                <h3 class="edu-hed">UNIVERSITY NAME</h3>
-                                <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Nostrum,
-                                    voluptatibus!
-                                </p>
-                            </div>
+                    <div class="experience">
+                        <div class="sticker">
+                            <h3>SCHOOL NAME</h3>
+                            <P>Concentration/Major: Science</P>
+                            <p>Result:CGPA 3.5(Out of 4)</p>
                         </div>
+                        <div>
+                            <h4>January 1994-December-2004</h4>
+                            <p>Degree Name</p>
+                            <p>Education Board:Your State</p>
+                        </div>
+                        <div class="sticker">
+                            <h3>COLLEGE NAME</h3>
+                            <P>Concentration/Major: Science</P>
+                            <p>Result:CGPA 3.5(Out of 4)</p>
+                        </div>
+                        <div>
+                            <h4>January 2004-December-2006</h4>
+                            <p>Degree Name</p>
+                            <p>Education Board:Your State</p>
+                        </div>
+                        <div class="sticker">
+                            <h3>UNIVERSITY NAME</h3>
+                            <P>Concentration/Major: Science</P>
+                            <p>Result:CGPA 3.5(Out of 4)</p>
+                        </div>
+                        <div>
+                            <h4>January 1994-December-2004</h4>
+                            <p>Degree Name</p>
+                            <p>Education Board:Your State</p>
+                        </div>
+
                     </div>
 
                 </div>
                 <div class="resume_item resume_education">
                     <div class="heading-2">
-                        <p>EXPERIENCE</p>
+                        <h4>EXPERIENCE</h4>
                     </div>
-                    <div>
-                        <h3 class="edu-hed">WORK EXPERINCE 01</h3>
-                        <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-                            voluptatibus!
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="edu-hed">WORK EXPERINCE 02</h3>
-                        <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-                            voluptatibus!
-                        </p>
-                    </div>
-                    <div>
-                        <h3 class="edu-hed">WORK EXPERINCE 03</h3>
-                        <p class="edu-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
-                            voluptatibus!
-                        </p>
+                    <div class="work-experience">
+                        <div class="sticker">
+                            <h3>WORK EXPERIENCE 01</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.</p>
+                        </div>
+                        <div>
+                            <h4>January 2004-December-2006</h4>
+                        </div>
+                        <div class="sticker">
+                            <h3>WORK EXPERIENCE 02</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.</p>
+                        </div>
+                        <div>
+                            <h4>January 2004-December-2006</h4>
+                        </div>
+                        <div class="sticker">
+                            <h3>WORK EXPERIENCE 03</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quibusdam.</p>
+                        </div>
+                        <div>
+                            <h4>January 1994-December-2004</h4>
+                        </div>
+
                     </div>
                 </div>
                 <div class="resume_item resume_hobby">
                     <div class="heading-2">
-                        <p class="bold">PROFESSIONAL SKILLS</p>
+                        <h4>PROFESSIONAL SKILLS<h4>
                     </div>
-                    <p class="p1">HTML
-                        <span class="skill-container">
-                            <div class="skill html"></div>
-                        </span>
+                    <div class="skill">
+                        <div class="sticker">
+                            <label for="file" class="prog">JAVA</label>
+                            <progress id="file" value="80" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">C++</label>
+                            <progress id="file" value="90" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">HTML</label>
+                            <progress id="file" value="80" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">CSS</label>
+                            <progress id="file" value="90" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">JAVASCRIPT</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">BOOTSTRAP</label>
+                            <progress id="file" value="78" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">HTML5</label>
+                            <progress id="file" value="89" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">PHP</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">WORDPRESS</label>
+                            <progress id="file" value="67" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">PYTHON</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div>
+                    </div>
                     </p>
                 </div>
             </div>
