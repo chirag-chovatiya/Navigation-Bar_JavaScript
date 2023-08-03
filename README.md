@@ -3,7 +3,5 @@
 - Live Url : https://chirag-chovatiya.github.io/Navigation-Bar_JavaScript/
 
 - Topic : Html Css Resume
-          Add work and images
-         
-- 
+          work and images add in resume
 
