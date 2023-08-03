@@ -1,0 +1,549 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    body {
+        background: #585c68;
+        font-size: 11px;
+        line-height: 22px;
+        color: #555555;
+    }
+
+    .w3-display-bottomleft h2 {
+        font-size: 45px;
+        color: white;
+    }
+
+    .w3-display-bottomleft {
+        position: absolute;
+        left: 25px;
+        bottom: 10px;
+    }
+
+    .education {
+        display: grid;
+        grid-template-columns: 0.5fr 3fr;
+        grid-template-rows: auto auto;
+        padding-top: 2rem;
+        gap: 2rem;
+    }
+
+    .resume_profile {
+        position: relative;
+    }
+
+    .contact,
+    .portfolio,
+    .hobby {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-right: 44px;
+        margin-top: 35px;
+        margin-bottom: 10px;
+    }
+
+    .contact .sticker {
+        padding-top: 18px;
+        color: #ff9e21;
+    }
+
+    .portfolio .sticker-1 {
+        padding-top: 14px;
+        color: #ff9e21;
+    }
+
+    .language {
+        margin-top: 35px;
+    }
+
+    .language .sticker {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 1rem;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-right: 44px;
+        margin-top: 10px;
+    }
+
+    .sticker progress {
+        height: 25px;
+    }
+
+    .experience,
+    .work-experience {
+        display: grid;
+        grid-template-columns: 3.5fr 3fr;
+        grid-template-rows: auto auto auto auto;
+        padding-top: 2rem;
+        gap: 1rem;
+        font-size: 12px;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .about {
+        font-size: 15px;
+        color: gainsboro;
+        padding-left: 30px;
+        margin-top: 20px;
+    }
+
+    .heading {
+        background-color: hsl(33.78deg 100% 56.47%);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        padding-left: 30px;
+        margin-right: 45px;
+        margin-top: 50px
+    }
+
+    .heading-2 {
+        background-color: hsl(33.78deg 100% 56.47%);
+        padding: 10px;
+        font-weight: bold;
+        font-size: 21px;
+        color: white;
+        padding-left: 30px;
+        margin-top: 50px
+    }
+
+    .resume {
+        width: 800px;
+        height: auto;
+        display: flex;
+        margin: 50px auto;
+    }
+
+    .resume .resume_left {
+        width: 280px;
+        background: hsl(0deg 0% 30.59%);
+    }
+
+    .resume .resume_left .resume_profile {
+        width: 100%;
+        height: 280px;
+    }
+
+    .resume .resume_left .resume_profile img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    .resume .resume_right {
+        width: 520px;
+        background: hsl(240deg 4% 9.8%);
+        padding: 25px;
+    }
+
+    .contact p,
+    .experience p,
+    .education p,
+    .portfolio p,
+    .language label,
+    .hobby p {
+        padding: 3px 0;
+        font-size: 13px;
+    }
+
+    .skill {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        margin-top: 50px;
+        gap: 1rem;
+        color: gainsboro;
+    }
+
+    .skill .sticker {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .skill .sticker .prog {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    /* WORK CSS */
+
+    .work {
+        padding-left: 30px;
+        margin-right: 44px;
+        margin-top: 50px;
+    }
+
+    .work-desc h2 {
+        font-size: 21px;
+        font-weight: bold;
+        color: gainsboro;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .work-desc p {
+        font-size: 15px;
+        /* font-weight: bold; */
+        color: gainsboro;
+        margin-bottom: 12px;
+
+    }
+
+    .box {
+        display: grid;
+        grid-template-columns: 1.1fr 1.1fr 1fr;
+        gap: 12px;
+    }
+
+    .box-in {
+        border: 4px solid hsl(33.78deg 100% 56.47%);
+        border-style: groove;
+        height: 125px;
+        width: 125px;
+        border-radius: 10px;
+        background-color: hsl(240deg 4% 9.8%);
+        box-sizing: border-box;
+        color: gainsboro;
+        margin-bottom: 25px;
+    }
+
+    .box-img {
+        height: 118px;
+        width: 118px;
+        border-radius: 7px;
+    }
+</style>
+
+<body>
+    <div class="resume">
+        <div class="resume_left">
+            <div class="resume_profile">
+                <img src="img/img.jpg" alt="profile_pic">
+                <div class="w3-display-bottomleft ">
+                    <h2>Jane Doe</h2>
+                    <br>
+                    <p style="color: white; font-size: 15px;">WEB DESIGNER & DEVLOPER</p>
+                </div>
+            </div>
+            <div class="resume_content">
+                <div class="resume_item resume_info">
+                    <div class="box-1">
+                        <div class="heading">
+                            <h4>CONTACT</h4>
+                        </div>
+                        <div class="contact">
+                            <div class="sticker">
+                                <i class="fa-solid fa-location-dot fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>B-107 SHIVDARSHAN APPARTMENT , MODI-MOHALO, ASHVANIKUMAR, SURAT-395008</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-solid fa-phone fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>+91991332568</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>chirag9292@gmail.com</p>
+                            </div>
+                            <div class="sticker">
+                                <i class="fa-solid fa-box fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>YourName.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="heading">
+                            <h4>PORTFOLIO</h4>
+                        </div>
+                        <div class="portfolio">
+                            <div class="sticker-1">
+                                <i class="fa-solid fa-location-dot fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>Dribbblr/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-solid fa-phone fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>colorflot/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-regular fa-envelope fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>behence/username</p>
+                            </div>
+                            <div class="sticker-1">
+                                <i class="fa-brands fa-square-youtube fa-xl"></i>
+                            </div>
+                            <div>
+                                <p>youtube/username</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="heading">
+                            <h4>LANGUAGE</h4>
+                        </div>
+                        <div class="language">
+                            <div class="sticker">
+                                <label for="file" class="prog">ENGLISH</label>
+                                <progress class="leaf bar" id="file" value="90" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">BENGALI</label>
+                                <progress id="file" value="80" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">SPANISH</label>
+                                <progress id="file" value="60" max="100">80%</progress>
+                            </div>
+                            <div class="sticker">
+                                <label for="file" class="prog">GERMAN</label>
+                                <progress id="file" value="40" max="100">80%</progress>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-1">
+                        <div class="heading">
+                            <h4>HOBBIES</h4>
+                        </div>
+                        <div class="hobby">
+                            <p>Photography</p>
+                            <p>Travelling</p>
+                            <p>Gardening</p>
+                            <p>Music</p>
+                            <p>Dancing</p>
+                            <p>Cooking</p>
+                            <p>Photography</p>
+                            <p>Travelling</p>
+                            <p>Gardening</p>
+                            <p>Music</p>
+                            <p>Dancing</p>
+                            <p>Cooking</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="resume_right">
+            <div class="resume_item resume_about">
+                <div class="heading-2">
+                    <h4>About us</h4>
+                </div>
+                <p class="about">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                    illo fugit
+                    officiis
+                    distinctio
+                    culpa officia totam atque exercitationem inventore repudiandae?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                    illo fugit
+                    officiis
+                    distinctio
+                    culpa officia totam atque exercitationem inventore repudiandae?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                    illo fugit
+                    officiis
+                    distinctio
+                    culpa officia totam atque exercitationem inventore repudiandae?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis
+                    illo fugit
+                    officiis
+                    distinctio
+                    culpa officia totam atque exercitationem inventore repudiandae?</p>
+                <div class="resume_item resume_work">
+                    <div class="heading-2">
+                        <h4>Education</h4>
+                    </div>
+                    <div class="experience">
+                        <div class="sticker">
+                            <h4>January 1994-December 2004</h4>
+                        </div>
+                        <div>
+                            <h3>SCHOOL/COLLEGE NAME</h3>
+                            <P>Sulok Digital Pvt Ltd</P>
+                        </div>
+                        <div class="sticker">
+                            <h4>January 1994-December 2004</h4>
+                        </div>
+                        <div>
+                            <h3>SCHOOL/COLLEGE NAME</h3>
+                            <P>Sulok Digital Pvt Ltd</P>
+                        </div>
+                        <div class="sticker">
+                            <h4>January 1994-December 2004</h4>
+                        </div>
+                        <div>
+                            <h3>SCHOOL/COLLEGE NAME</h3>
+                            <P>Sulok Digital Pvt Ltd</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume_item resume_education">
+                    <div class="heading-2">
+                        <h4>EXPERIENCE</h4>
+                    </div>
+                    <div class="work-experience">
+                        <div class="sticker">
+                            <h4>January 2004-December 2006</h4>
+                        </div>
+                        <div>
+                            <h3>DEVLOPER</h3>
+                            <P>Sulok Digital Pvt ltd</P>
+                        </div>
+                        <div class="sticker">
+                            <h4>January 2004-December 2006</h4>
+                        </div>
+                        <div>
+                            <h3>DEVLOPER</h3>
+                            <P>Sulok Digital Pvt ltd</P>
+                        </div>
+                        <div class="sticker">
+                            <h4>January 2004-December 2006</h4>
+                        </div>
+                        <div>
+                            <h3>DEVLOPER</h3>
+                            <P>Sulok Digital Pvt ltd</P>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume_item resume_hobby">
+                    <div class="heading-2">
+                        <h4>WORKS<h4>
+                    </div>
+                    <!-- <div class="skill"> -->
+                    <!-- <div class="sticker">
+                            <label for="file" class="prog">JAVA</label>
+                            <progress id="file" value="80" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">C++</label>
+                            <progress id="file" value="90" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">HTML</label>
+                            <progress id="file" value="80" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">CSS</label>
+                            <progress id="file" value="90" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">JAVASCRIPT</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">BOOTSTRAP</label>
+                            <progress id="file" value="78" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">HTML5</label>
+                            <progress id="file" value="89" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">PHP</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">WORDPRESS</label>
+                            <progress id="file" value="67" max="100">80%</progress>
+                        </div>
+                        <div class="sticker">
+                            <label for="file" class="prog">PYTHON</label>
+                            <progress id="file" value="56" max="100">80%</progress>
+                        </div> -->
+
+                    <!-- </div> -->
+                    <div class="work">
+                        <div class="work-desc">
+                            <!-- Title -->
+                            <h2>Chirag Chovatiya</h2>
+                        </div>
+                        <div class="box">
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="work-desc">
+                            <!-- Title -->
+                            <h2>Chirag Chovatiya</h2>
+                            <!-- Categories -->
+                            <p>Title</p>
+                        </div>
+                        <div class="box">
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-2.jpg" alt="">
+                            </div>
+
+                        </div>
+                        <div class="work-desc">
+                            <!-- Title -->
+                            <h2>Chirag Chovatiya</h2>
+                            <!-- categories -->
+                            <p>Test</p>
+                            <!-- Description -->
+                            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur adipisci
+                                tempora commodi quos quibusdam unde odio minus minima perspiciatis neque.</p>
+                        </div>
+                        <div class="box">
+                            <div class="box-in">
+                                <img class="box-img" src="img/img-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
